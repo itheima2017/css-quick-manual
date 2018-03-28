@@ -1,28 +1,12 @@
 # [CSS 种植手册](https://github.com/itheima2017/css-quick-manual)
 
-[![vue](https://img.shields.io/badge/vue-2.5.9-brightgreen.svg ':no-zoom')](https://github.com/vuejs/vue)
+<!-- [![css](https://img.shields.io/badge/vue-2.5.9-brightgreen.svg ':no-zoom')](https://github.com/vuejs/vue) -->
 
 ## 介绍
 
-css 种植手册 是一个企业级后台管理方案，集成了 用户、菜单权限、界面权限点、登录、注册、常用界面组件
+css 种植手册 是一套为后台人员准备的快速上手小册，包含了工作中经常会用到的样式和效果，使用过程中，只需复制文章中的代码，即可实现想要的效果，
+这里暂时只列出了笔者在工作中遇到的一些经典效果，如果您有好的建议和意见，请大家一起来完善！
 
-## 功能
-
-
-## 前序准备
-
-
-
-## 目录结构
-
-## 安装
-
-# 克隆项目
-
-# 安装依赖
-
-
-# 本地开发 启动项目
 
 ### 版权
 

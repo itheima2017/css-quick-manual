@@ -1,6 +1,6 @@
 # <b>loading省略号动画</b>
 
-![效果](./../assets/layout1.png)
+[效果页面](loading.html ':include :type=iframe width=100% height=60px')
 
 `HTML`
 
@@ -29,4 +29,4 @@
 }
 ```
 <b>浏览器支持</b>
-<iframe src="https://caniuse.bitsofco.de/embed/index.html?feat=css-animation&amp;periods=future_2,future_1,current,past_1,past_2,past_3&amp;accessible-colours=false" frameborder="0" width="100%" height="465px"></iframe>
+<iframe src="https://caniuse.bitsofco.de/embed/index.html?feat=css-animation&amp;periods=future_2,future_1,current,past_1,past_2,past_3&amp;accessible-colours=false" frameborder="0" width="100%" height="475px"></iframe>

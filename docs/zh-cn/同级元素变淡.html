@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			span {
+				padding: 0 1rem;
+				transition: opacity 0.2s;
+				cursor: pointer;
+			}
+			
+			.sibling-fade:hover span:not(:hover) {
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="sibling-fade">
+			<span>项目 1</span>
+			<span>项目 2</span>
+			<span>项目 3</span>
+			<span>项目 4</span>
+			<span>项目 5</span>
+			<span>项目 6</span>
+		</div>
+	</body>
+</html>

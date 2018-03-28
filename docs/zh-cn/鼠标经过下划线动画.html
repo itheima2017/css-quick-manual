@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.hover-underline-animation {
+				display: inline-block;
+				position: relative;
+				line-height: 34px;
+				color: #0087ca;
+				cursor: pointer;
+			}
+			.hover-underline-animation::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: #0087ca;
+				transform-origin: bottom right;
+				transition: transform 0.25s ease-out;
+			}
+			
+			.hover-underline-animation:hover::after {
+				transform: scaleX(1);
+				transform-origin: bottom left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p class="hover-underline-animation">鼠标经过显示效果</p>
+
+	</body>
+
+</html>

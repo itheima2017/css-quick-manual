@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.loading:after {
+				overflow: hidden;
+				display: inline-block;
+				vertical-align: bottom;
+				animation: ellipsis 2s infinite;
+				content: "\2026";
+				/* ascii code for the ellipsis character */
+			}
+			
+			@keyframes ellipsis {
+				from {
+					width: 2px;
+				}
+				to {
+					width: 15px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="loading">正在加载中</div>
+	</body>
+
+</html>
