@@ -1,13 +1,12 @@
 ![logo](https://wpimg.wallstcn.com/98d033e6-8da0-49b5-afe6-f491f4cd3348.png ':no-zoom')
 
-> vue-element-admin-itheima 商用管理系统模板
+> CSS 种植手册
 
-- 标准的后台管理 （注册、登录、后台面板、用户管理、权限、权限点）
-- 前端基于 vue spa 架构
-- 接口符合 restful api 规范
-- 后端代码 （Java SprintBoot2）
+- 快捷、方便、易用，代码直接复制粘贴
+- 常见效果样式集合，包含布局、视觉、动画
+- 兼容性分析,列举不同浏览器支持情况
 
-[GitHub](https://github.com/itheima2017/vue-element-admin-itheima ":target=_blank")
-[快速开始](zh-cn/README.md)
+[GitHub](https://github.com/itheima2017/css-quick-manual ":target=_blank")
+[快速开始](README.md)
 
 <!-- ![color](#00b887) -->
