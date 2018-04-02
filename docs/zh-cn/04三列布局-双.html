@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        #header {
+            height: 60px;
+            background-color: #ccc;
+        }
+
+        #left {
+            float: left;
+            width: 100px;
+            height: 300px;
+            margin-left: -100%;
+            /*调整#left的位置,值等于自身宽度*/
+            background-color: bisque;
+            opacity: 0.5;
+        }
+
+        #center {
+            height: 300px;
+            float: left;
+            width: 100%;
+            background-color: beige;
+        }
+
+        #center_inbox {
+            height: 300px;
+            margin: 0 220px 0 120px;
+            /*关键!!!左右边界等于左右盒子的宽度,多出来的为盒子间隔*/
+        }
+
+        #right {
+            float: left;
+            width: 200px;
+            height: 300px;
+            margin-left: -200px;
+            /*使right到指定的位置,值等于自身宽度*/
+            background-color: #e8e8c1;
+            opacity: 0.5;
+        }
+
+        #footer {
+            clear: both;
+            /*注意清除浮动!!*/
+            height: 60px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">这是头部</div>
+    <div id="parent">
+        <!--中间栏需要放在前面-->
+        <div id="center">
+            <div id="center_inbox">中间自适应</div>
+        </div>
+        <div id="left">左列定宽</div>
+        <div id="right">右列定宽</div>
+    </div>
+    <div id="footer">这是底部</div>
+</body>
+
+</html>

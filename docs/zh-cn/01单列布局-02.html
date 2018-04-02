@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            min-width: 768px;
+            /*为浏览器设置最小宽度，小于改宽度时，显示水平滚动条*/
+        }
+
+        .wrap {
+            width: 500px;
+            /*内容宽度，根据实际需要设置*/
+            margin: 0 auto;
+        }
+
+        #header {
+            height: 80px;
+            background: beige;
+        }
+
+        #main {
+            height: 300px;
+            background: #e8f0ff;
+        }
+
+        #footer {
+            height: 100px;
+            background: #d0d4dc;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrap">这是头部</div>
+    </header>
+    <section id="main" class="wrap">这是内容部分居中</section>
+    <section id="footer">
+        <div class="wrap">这是底部</div>
+    </section>
+</body>
+
+</html>
