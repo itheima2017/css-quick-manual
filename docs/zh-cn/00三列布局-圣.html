@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    body {
+            margin: 0
+        }
+        #header {
+            height: 60px;
+            background-color: #ccc;
+        }
+
+        #parent {
+            box-sizing: border-box;
+            height: 300px;
+            padding: 0 215px 0 115px; /*为了使#center摆正,左右padding分别等于左右盒子的宽,
+                                        可以结合左右盒子相对定位的left调整间距*/
+        }
+
+        #left {
+            margin-left: -100%; /*使#left上去一行*/
+            position: relative;
+            left: -115px; /*相对定位调整#left的位置,正值大于或等于自身宽度*/
+            float: left;
+            width: 100px;
+            height: 300px;
+            background-color: #e4dbdb;
+            opacity: 0.5;
+        }
+
+        #center {
+            float: left;
+            width: 100%;  /*由于#parent的padding,达到自适应的目的*/
+            height: 300px;
+            box-sizing: border-box;
+            background-color: #becbd0;
+        }
+
+        #right {
+            position: relative;
+            left: 215px;  /*相对定位调整#right的位置,大于或等于自身宽度*/
+            width: 200px;
+            height: 300px;
+            margin-left: -200px;  /*使#right上去一行*/
+            float: left;
+            background-color: #e8e8c1;
+            opacity: 0.5;
+        }
+
+        #footer {
+            height: 60px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="parent">
+        <!--#center需要放在前面-->
+        <div id="center">中间自适应</div>
+        <div id="left">左列定宽</div>
+        <div id="right">右列定宽</div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

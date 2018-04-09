@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#parent{
+                height: 200px;
+                text-align: center;
+                background: #ececec;
+            }
+            .son{
+                width: 200px;
+                display: inline-block; /*改为行内或者行内块级形式，以达到text-align对其生效*/
+                background: #fff;
+            }
+		</style>
+	</head>
+
+	<body>
+		<div id="parent">
+            <div class="son">多个块级元素水平居中</div>
+            <div class="son">多个块级元素水平居中</div>
+          </div>
+	</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            margin: 0
+        }
+        #left {
+            background-color: #e4dbdb;
+            float: left;
+            width: 100px;
+            height: 500px;
+        }
+        #right {
+            background-color: #becbd0;
+            height: 500px;
+            margin-left: 100px; /*大于等于#left的宽度*/
+        }
+        .clearfix {
+            clear:both;  /*清除浮动*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="left">左列定宽</div>
+    <div id="right">右列自适应</div>
+    <div class="clearfix"></div>
+</body>
+
+</html>

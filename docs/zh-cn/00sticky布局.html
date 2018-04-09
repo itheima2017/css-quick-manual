@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            height: 64px;
+            line-height: 64px;
+            background-color: beige;
+        }
+        html,
+        body,
+        .content {
+            height: 100%;
+            text-align: center;
+        }
+        
+        body>.content {
+            height: 100%;
+            min-height: 100%;
+        }
+        
+        .main {
+            padding-bottom: 64px; 
+          
+        }
+        
+        .footer {
+            position: relative;
+            margin-top: -64px;  
+            height: 64px;      
+            text-align: center;
+            line-height: 64px;
+            clear: both;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="wrapper">
+            <div class="title">
+                <p>这里是头部</p>
+            </div>
+            <div class="main">
+                <p>这里是main content区域...</p>
+                <p>这里是main content区域...</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>底部固定</p>
+    </div>
+</body>
+
+</html>

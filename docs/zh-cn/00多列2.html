@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#parent {
+                margin-left: -15px;
+                /*使内容看起来居中*/
+                height: 300px;
+                display: flex;
+            }
+            .column {
+                flex: 1;
+                /*一起平分#parent*/
+                margin-left: 15px;
+                /*设置间距*/
+            }
+            .column:nth-child(odd) {
+                background-color: #e4dbdb;
+            }
+            .column:nth-child(even) {
+                background-color: #becbd0;
+            }
+		</style>
+	</head>
+
+	<body>
+		<div id="parent">
+            <div class="column">1
+                <p>我是文字我是文字我输文字我是文字我是文字</p>
+            </div>
+            <div class="column">2
+                <p>我是文字我是文字我输文字我是文字我是文字</p>
+            </div>
+            <div class="column">3
+                <p>我是文字我是文字我输文字我是文字我是文字</p>
+            </div>
+            <div class="column">4
+                <p>我是文字我是文字我输文字我是文字我是文字</p>
+            </div>
+        </div>
+	</body>
+
+</html>

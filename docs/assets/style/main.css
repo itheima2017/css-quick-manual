@@ -1,0 +1,66 @@
+/* left */
+body .sidebar {
+    background: linear-gradient(-30deg,#2a3d67,#14264e);
+    color: #fff;
+}
+.sidebar li.active {
+    background: hsla(0,0%,100%,.1);
+}
+.sidebar li.active a {
+    color: #88f4ff;
+}
+.sidebar ul li a {
+    padding-left: 10px;
+    border-left: 2px solid #576a85;
+    color: #f6f7fd;
+}
+.sidebar-nav a:hover {
+    border-color: #42b983;
+}
+.sidebar ul li.active>a {
+    border-left: 2px solid;
+    border-right: none;
+}
+.sidebar-toggle {
+    background-color: transparent !important;
+}
+.search {
+    border-bottom:1px solid #807e7e !important;
+}
+.search input {
+    background: transparent;
+}
+/* right */
+.markdown-section {
+    max-width: 960px;
+    min-height: 1200px;
+    margin-bottom: 45px;
+    margin-top:45px;
+    padding: 30px 40px;
+    background: #fff;
+    box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0,32,128,.1), 0 0 0 1px #f0f2f7;
+}
+.markdown-section strong {
+    padding: 2px 6px;
+    background: #de6060;
+    color: #fff;
+}
+.markdown-section iframe {
+    margin: 0;
+}
+.content {
+    /* height: 100%; */
+    padding-top: 0;
+    bottom: auto;
+    background: #f6f7fd;
+}
+.markdown-section code {
+    font-size: .8rem
+}
+.emoji {
+    vertical-align: top;
+    margin-top: 2px;
+}
+p img.medium-zoom-image {
+    width: 70px;
+}
