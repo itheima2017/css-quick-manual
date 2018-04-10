@@ -1,3 +1,6 @@
+.section.cover.show {
+    background-color: #444 !important;
+}
 /* left */
 body .sidebar {
     background: linear-gradient(-30deg,#2a3d67,#14264e);

@@ -3,13 +3,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="55px" height="23px" viewBox="0 0 55 23" enable-background="new 0 0 55 23" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.021" y1="11.5" x2="54.6875" y2="11.5">
-	<stop  offset="0" style="stop-color:#FF3800"/>
-	<stop  offset="0.9307" style="stop-color:#FDB900"/>
-</linearGradient>
-<path fill="url(#SVGID_1_)" d="M54.688,11.5c0,6.195-5.023,11.219-11.219,11.219H11.24c-6.196,0-11.219-5.023-11.219-11.219l0,0
-	c0-6.196,5.023-11.219,11.219-11.219h32.229C49.664,0.281,54.688,5.304,54.688,11.5L54.688,11.5z"/>
-<text transform="matrix(1 0 0 1 15.9893 14.5166)" fill="#FFFFFF" font-family="'Denmark'" font-size="9.7556">HTML</text>
-<path fill="#FFFFFF" d="M12.063,13.893c0,0.553-0.448,1-1,1H9.73c-0.552,0-1-0.447-1-1V9.107c0-0.552,0.448-1,1-1h1.333
+<path fill="#FF9800" d="M54.833,11.5c0,6.195-5.022,11.219-11.219,11.219H11.386c-6.196,0-11.219-5.023-11.219-11.219l0,0
+	c0-6.196,5.023-11.219,11.219-11.219h32.229C49.811,0.281,54.833,5.304,54.833,11.5L54.833,11.5z"/>
+<text transform="matrix(1 0 0 1 16.1353 14.5166)" fill="#FFFFFF" font-family="'Denmark'" font-size="9.7556">HTML</text>
+<path fill="#FFFFFF" d="M12.209,13.893c0,0.553-0.448,1-1,1H9.876c-0.552,0-1-0.447-1-1V9.107c0-0.552,0.448-1,1-1h1.333
 	c0.552,0,1,0.448,1,1V13.893z"/>
 </svg>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>CSS 种植手册</title>
@@ -12,43 +13,50 @@
   <link rel="stylesheet" href="assets/style/main.css">
 </head>
 <style>
-  a{
+  a {
     text-decoration-line: none!important;
   }
-  .medium-zoom-image--open{
+
+  .medium-zoom-image--open {
     z-index: 3!important;
   }
-  .sidebar-nav a:hover{
+
+  .sidebar-nav a:hover {
     color: #42b983!important;
   }
-  nav.app-nav{
+
+  nav.app-nav {
     margin-right: 100px;
   }
-  nav.app-nav .emoji{
+
+  nav.app-nav .emoji {
     vertical-align: -5px;
-    margin-right:5px;
+    margin-right: 5px;
   }
 </style>
 
 <body>
-    <nav>
-      <!-- <a href="#/" data-translation="en">
+  <nav>
+    <!-- <a href="#/" data-translation="en">
         <img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/uk.png" alt="uk"> EN
       </a> -->
-      <!-- <a href="#/zh-cn" data-translation="zh-cn">
+    <!-- <a href="#/zh-cn" data-translation="zh-cn">
         <img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/cn.png" alt="cn"> 中文
       </a> -->
-    </nav>
+  </nav>
   <div id="app"></div>
 </body>
 <script>
   window.$docsify = {
     plugins: [
+      function (hook, vm) {
+
+      }
     ],
     loadSidebar: true,
     maxLevel: 10,
     auto2top: true,
-    coverpage: ['/', '/zh-cn/'],
+    coverpage: ['/'],
     name: 'CSS种植手册',
     search: {
       noData: {
@@ -62,7 +70,9 @@
       }
     }
   }
+
 </script>
+<!-- <script src="assets/style/jquery-2.1.4.min.js"></script> -->
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
@@ -70,9 +80,21 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109340118-1"></script>
 <script>
+  //  var d = document.getElementsByClassName("markdown-section");
+  // //  console.log(d)
+   //var n = document.createElement("span");
+  //  n.innerHTML= "444444"
+  //  console.log(n)
+   //document.getElementsByClassName("markdown-section").before(n)
+  //  element.appendChild('para');
+  // element.appendChild('<span>333333</span>')
+
+
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'UA-109340118-1');
+
 </script>
+
 </html>

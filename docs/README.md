@@ -1,10 +1,10 @@
-# Headline
+# 简介
 
-The documentation source of [vue-element-admin-itheima](https://github.com/itheima2017/vue-element-admin-doc-itheima)
+文档地址[css-quick-manual](https://github.com/itheima2017/css-quick-manual)
 
-url:https://itheima2017.github.io/vue-element-admin-doc-itheima
+url:https://github.com/itheima2017/css-quick-manual
 
-## Development
+## 生产配置
 
 ```bash
 npm i docsify-cli -g
@@ -14,4 +14,4 @@ cd the project
 docsify serve docs
 ```
 
-open http://localhost:3000
+打开 http://localhost:3000

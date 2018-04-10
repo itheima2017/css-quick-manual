@@ -14,4 +14,4 @@ cd the project
 docsify serve docs
 ```
 
-open http://localhost:3000
+打开 http://localhost:3000
