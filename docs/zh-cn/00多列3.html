@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.left2 {
+                width: 200px;
+                height: 100px;
+                background-color: green;
+                display: inline-block;
+            }
+            .right2 {
+                width: 60%;
+                height: 100px;
+                background-color: red;
+                display: inline-block;
+            }
+            #left {
+                float: left;
+                width: 200px;
+                height: 100px;
+                background-color: green;
+                }
+
+                #right {
+                float: right;
+                width: 200px;
+                height: 100px;
+                background-color: green;
+                }
+                #contentLR {
+                height: 100px;
+                background-color: red;
+                margin: 0 200px;
+                }
+		</style>
+	</head>
+
+	<body>
+		<h4>行内布局使用inline-block</h4>
+        <div class="left2">Left</div>
+        <div class="right2">Right</div>
+        <h4>浮动布局float+margin正边距与多列布局</h4>
+        <div id="left">
+          Left Sidebar
+        </div>
+        <div id="right">
+          Right Sidebar
+        </div>
+        <div id="contentLR">
+          <div id="contentInner">
+            Main Content
+          </div>
+        </div>
+	</body>
+
+</html>

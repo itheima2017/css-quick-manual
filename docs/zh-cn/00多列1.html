@@ -7,19 +7,23 @@
 		<style type="text/css">
 			.demo {
                 height: 200px;
-                columns: 3;    /*设置多列的个数,与div个数相同*/ 
+                column-count: 4;  /*关键*/
             }
-            .one {
-                background: beige;
-                height: 200px;  /*每个模块的高度必须相同*/
+            .demo .one {
+              height: 200px;
+              background-color: #ececec;
             }
-            .two {
-                background: blanchedalmond;
-                height: 200px;
+            .demo .two {
+              height: 200px;
+              background-color: #ececec;
             }
-            .three {
-                background: beige;
-                height: 200px;
+            .demo .three {
+              height: 200px;
+              background-color: #ececec;
+            }
+            .demo .four {
+              height: 200px;
+              background-color: #ececec;
             }
 		</style>
 	</head>
@@ -30,6 +34,7 @@
             <div class="one">第一个</div>
             <div class="two">第二个</div>
             <div class="three">第三个</div>
+            <div class="four">第四个</div>
         </div>
 	</body>
 

@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="47px" height="23px" viewBox="0 0 47 23" enable-background="new 0 0 47 23" xml:space="preserve">
-<path fill="#15caf8" d="M46.666,11.5c0,6.195-5.021,11.219-11.219,11.219H11.22c-6.196,0-11.219-5.023-11.219-11.219l0,0
+<path fill="#39e07d" d="M46.666,11.5c0,6.195-5.021,11.219-11.219,11.219H11.22c-6.196,0-11.219-5.023-11.219-11.219l0,0
 	c0-6.196,5.023-11.219,11.219-11.219h24.228C41.645,0.281,46.666,5.304,46.666,11.5L46.666,11.5z"/>
 <text transform="matrix(1 0 0 1 15.9692 14.5166)" fill="#FFFFFF" font-family="'Denmark'" font-size="9.7556">CSS</text>
 <path fill="#FFFFFF" d="M12.043,13.893c0,0.553-0.448,1-1,1H9.71c-0.552,0-1-0.447-1-1V9.107c0-0.552,0.448-1,1-1h1.333

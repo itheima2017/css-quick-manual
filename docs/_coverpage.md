@@ -1,4 +1,4 @@
-![logo](assets/css logo.png ':no-zoom')
+![logo](assets/logo1.svg ':no-zoom')
 
 <font size="5"> CSS 种植手册</font>  <font size="4"><sub>v1.0.0</sub> </font>
 

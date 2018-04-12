@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <style type="text/css">
+            body { 
+                padding: 0;
+                margin: 0;
+                min-height: 100vh; 
+                display: flex; 
+                flex-direction: column; 
+            } 
+            header {
+                height: 70px;
+                background: bisque;
+            }
+            .content { 
+                flex: auto; 
+                display: flex; 
+                background: mediumaquamarine;
+            } 
+            .content aside {
+                width: 200px;
+                background: beige;
+            }
+            .content article { 
+                flex: auto; 
+            }
+            
+            footer {
+                height: 70px;
+                background: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <header>头部</header> 
+        <div class="content"> 
+          <aside>左侧</aside> 
+          <article>主内容</article> 
+        </div> 
+        <footer>底部</footer>
+    </body>
+</html>

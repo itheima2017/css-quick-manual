@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body,
+        html,
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            width: 800px;
+            line-height: 36px;
+            margin: 0 auto;
+            background: bisque
+        }
+        ul {
+          padding: 0;
+        }
+        li {
+          list-style-type:none;
+        }
+        #div1 {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        #div2 {
+            margin-right: -10px;
+            margin-bottom: -10px;
+            overflow: auto;
+        }
+        
+        .box {
+            width: 192px;
+            height: 190px;
+            margin: 0 10px 10px 0;
+            background: lightgreen;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+            对比作用，宽度相同 两端对齐
+    </div>
+    <div id="div1">
+        <ul id="div2">
+            <li class="box">
+            </li>
+            <li class="box">
+            </li>
+            <li class="box">
+            </li>
+            <li class="box">
+            </li>
+            <li class="box">
+            </li>
+            <li class="box">
+            </li>
+            <li class="box">
+            </li>
+            <li class="box">
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
