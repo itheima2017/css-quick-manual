@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <style type="text/css">
+           .parent{
+            width: 780px;
+            padding: 10px 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: #eaeaea;
+          }
+          .parent .row {
+            display: flex;
+            flex: 1;
+          }
+          .parent .row .item {
+             flex: 1;
+             border-bottom: 1px solid #ccc;
+             height: 150px;
+             background-color: beige;
+          }
+          
+          .parent .row .item.border-rit {
+            border-right: 1px solid #ccc;
+            /*margin-right: 10px;  若每一项之间有间距使用它 */
+          }
+		</style>
+	</head>
+
+	<body>
+		<div class="parent">
+            <div class="row">
+              <div class="item border-rit">每一项</div>
+              <div class="item border-rit">每一项</div>
+              <div class="item">每一项</div>
+            </div>
+            <div class="row">
+              <div class="item border-rit">每一项</div>
+              <div class="item border-rit">每一项</div>
+              <div class="item">每一项</div>
+            </div>
+            <div class="row">
+              <div class="item border-rit">每一项</div>
+              <div class="item border-rit">每一项</div>
+              <div class="item">每一项</div>
+            </div>
+          </div>
+	</body>
+
+</html>

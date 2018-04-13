@@ -35,16 +35,11 @@ aside {
   flex: auto; 
   display: flex; 
   flex-direction: column; 
- 
-} 
- 
+}
 .content article { 
   flex: auto;
   background: mediumaquamarine;
 } 
-.content header {
-  background-color: beige;
-}
 .content header {
   height: 50px;
   background-color: beige;
