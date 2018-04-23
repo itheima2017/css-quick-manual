@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <style type="text/css">
+        .ellipsis-single {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 200px;
+        }
+        
+        .ellipsis-more {
+            position: relative;
+            line-height: 1.4em;
+            height: 4.2em; /* 3倍行高显示三行内容*/
+            overflow: hidden;
+            width: 200px;
+        }
+        
+        .ellipsis-more::after {
+            content: "...";
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <p class="ellipsis-single">这是单行文本省略号的效果，这是单行文本省略号的效果，这是单行文</p>
+        
+        <p class="ellipsis-more">这是多行文本省略号的效果，这是多行文本省略号的效果，这是多行文</p>
+    </body>
+</html>
