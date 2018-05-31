@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    html,body {
+        margin: 0;
+        padding: 0;
+    }
+    .cloud {
+        width: 100%;
+        background: url('http://www.100sucai.com/img/bg-clouds.png');
+        height: 190px;
+        animation: anti_cloud 10s linear infinite; 
+        -webkit-animation: anti_cloud 15s linear infinite; 
+    }
+    @keyframes anti_cloud {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 50% 50%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="cloud">
+    </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				display: flex;
+				width: 690px;
+				justify-content: center;
+				padding: 0 10px;
+				text-align: center;
+			}
+			
+			.box .item {
+				flex: 1;
+			}
+			
+			img {
+				margin: 0
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			p {
+				margin: 0;
+				padding: 0;
+				line-height: 1.5;
+				font-weight: normal;
+			}
+			
+			p {
+				font-size: 12px;
+			}
+			/* 效果一： */
+			
+			.one {
+				text-align: center;
+			}
+			
+			.one .img-text {
+				width: 200px;
+				overflow: hidden;
+				cursor: pointer;
+				font-size: 0;
+				position: relative;
+			}
+			
+			.one img {
+				transition: all .5s;
+			}
+			
+			.one .img-text .text {
+				font-size: 14px;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%, 0);
+				opacity: 0;
+				transition: all .5s;
+			}
+			
+			.one .img-text .text a {
+				display: block;
+				padding: 5px 10px;
+				text-decoration: none;
+				color: #fff;
+				border: 1px solid #fff;
+				border-radius: 5px;
+			}
+			
+			.one .img-text .text a:hover {
+				background-color: #9d9da5;
+				border-color: #9d9da5
+			}
+			
+			.one:hover img {
+				transform: scale(1.1);
+				opacity: .9;
+			}
+			
+			.one:hover .text {
+				opacity: 1;
+				bottom: 50%;
+				left: 50%;
+				transform: translate(-50%, 50%);
+			}
+			/* 效果二： 描述文字 */
+			
+			.two {
+				overflow: hidden;
+				cursor: pointer;
+			}
+			
+			.two .img-text {
+				position: relative;
+				overflow: hidden;
+				width: 200px;
+				transition: all .5s;
+				font-size: 0;
+			}
+			
+			.two .img-text h3,
+			h4 {
+				font-size: 15px;
+			}
+			
+			.two .img-text .text {
+				margin-left: 10px;
+				text-align: left;
+				color: #fff;
+			}
+			
+			.two .img-text .text {
+				padding: 10px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.two .img-text .text .content {
+				margin-top: 10px;
+			}
+			
+			.two .img-text .text p {
+				transform: translate3d(-220px, 0, 0);
+				opacity: 0;
+				transition: all 0.35s;
+			}
+			
+			.two .img-text img {
+				transform: scale(1);
+				transition: all .35s;
+			}
+			
+			.two:hover .img-text img {
+				transform: scale(1.1);
+			}
+			
+			.two:hover .img-text .text p {
+				padding: 0 5px;
+				background-color: #001;
+				margin-bottom: 2px;
+				opacity: 1;
+				transform: translate3d(0, 0, 0)
+			}
+			
+			.two:hover .img-text .text p:first-child {
+				transition-delay: 0;
+			}
+			
+			.two:hover .img-text .text p:nth-of-type(2) {
+				transition-delay: .13s;
+			}
+			
+			.two:hover .img-text .text p:nth-of-type(3) {
+				transition-delay: .25s;
+			}
+			/* 效果三： 描边线条 */
+			
+			.three .img-text {
+				position: relative;
+			}
+			
+			.three .img-text:before,
+			.three .img-text:after {
+				position: absolute;
+				top: 10px;
+				left: 10%;
+				content: '';
+				width: 180px;
+				height: 80%;
+				transform: scale(1, 1);
+			}
+			
+			.three .img-text:before {
+				border-top: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				opacity: 0;
+				transform: scale(0, 1);
+				transition: all .5s;
+			}
+			
+			.three .img-text:after {
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+				opacity: 0;
+				transform: scale(1, 0);
+				transition: all .5s;
+			}
+			
+			.three .img-text .text {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: #fff;
+				text-align: left;
+			}
+			
+			.three .img-text .text h4 {
+				font-weight: bold;
+				padding-bottom: 5px;
+				transform: translate3d(0, 0, 0);
+				transition: all .5s;
+			}
+			
+			.three .img-text .text p {
+				opacity: 0;
+				transform: translate3d(0, 10px, 0);
+				transition: all .5s;
+			}
+			
+			.three:hover .img-text:before {
+				opacity: 1;
+				transform: scale(1, 1);
+			}
+			
+			.three:hover .img-text:after {
+				opacity: 1;
+				transform: scale(1, 1);
+			}
+			
+			.three:hover .img-text .text h4 {
+				transform: translate3d(0, 5px, 0);
+			}
+			
+			.three:hover .img-text .text p {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="item one">
+				<h3>文字上移图片放大</h3>
+				<div class="img-text">
+					<img src='https://images.unsplash.com/photo-1452270378797-c66dcc949a3f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=1e64f839ef2d4400d456e647bc1df5cc' alt='' width="200px" />
+					<div class="text">
+						<a href="#">查看视频</a>
+					</div>
+				</div>
+			</div>
+			<div class="item two">
+				<h3>逐渐移入</h3>
+				<div class="img-text">
+					<img src='https://images.unsplash.com/photo-1452270378797-c66dcc949a3f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=1e64f839ef2d4400d456e647bc1df5cc' alt='' width="200px" />
+					<div class="text">
+						<h4>标题部分</h4>
+						<div class="content">
+							<p>这是段落部分1</p>
+							<p>这是段落部分22</p>
+							<p>这是段落部分333</p>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item three">
+				<h3>描边线条</h3>
+				<div class="img-text">
+					<img src='https://images.unsplash.com/photo-1452270378797-c66dcc949a3f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=1e64f839ef2d4400d456e647bc1df5cc' alt='' width="200px" />
+					<div class="text">
+						<h4>这是标题</h4>
+						<p>这是内容部分部分。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

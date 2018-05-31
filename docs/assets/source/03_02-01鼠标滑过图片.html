@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .box {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .box .item {
+            flex: 1;
+        }
+
+        a {
+            font-size: 0;
+            display: inline-block
+        }
+
+        img, p {
+            margin: 0;
+            line-height: 30px;
+        }
+
+        /* 效果一：闪光滑过 */
+
+        .item.one a {
+            position: relative;
+            overflow: hidden
+        }
+
+        .item.one a:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 160px;
+            margin-top: 0px;
+            margin-left: -120px;
+            overflow: hidden;
+            z-index: 6;
+            background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-25deg);
+            -webkit-transform: skewX(-25deg);
+            -moz-transform: skewX(-25deg);
+            -o-transform: skewX(-25deg);
+        }
+
+        .item.one:hover a:before {
+            animation: light-anti .4s ease-out forwards;
+        }
+
+        @keyframes light-anti {
+            0% {
+                margin-left: -20px
+            }
+            100% {
+                margin-left: 240px
+            }
+        }
+        /* 效果二：图片放大 */
+
+        .item.two a {
+            width: 100%;
+            overflow: hidden;
+            /* 若图片要求全部显示，则去掉此属性*/
+        }
+
+        .item.two a img {
+            transition: all .5s;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+        }
+
+        .item.two a:hover img {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+        /* 效果三：图片上移 */
+
+        .item.three a {
+            transition: all .5s;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+        }
+
+        .item.three a:hover {
+            transform: translate(0, -12px);
+            -webkit-transform: translate(0, -12px);
+            -moz-transform: translate(0, -12px);
+            -o-transform: translate(0, -12px);
+        }
+        /* 效果四：透明度改变 */
+
+        .item.four img {
+            transition: opacity .4s ease-in-out;
+        }
+
+        .item.four img:hover {
+            opacity: .8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item one">
+            <p>一道闪光</p>
+            <a href="">
+            <img src='https://images.unsplash.com/photo-1452270378797-c66dcc949a3f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=1e64f839ef2d4400d456e647bc1df5cc' alt='' width="200px" />
+          </a>
+        </div>
+        <div class="item two">
+            <p>放大</p>
+            <a href="">
+            <img src='https://images.unsplash.com/photo-1452270378797-c66dcc949a3f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=1e64f839ef2d4400d456e647bc1df5cc' alt='' width="200px" />
+          </a>
+        </div>
+        <div class="item three">
+            <p>上移</p>
+            <a href="">
+            <img src='https://images.unsplash.com/photo-1452270378797-c66dcc949a3f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=1e64f839ef2d4400d456e647bc1df5cc' alt='' width="200px" />
+          </a>
+        </div>
+        <div class="item four">
+            <p>改变透明度</p>
+            <a href="">
+            <img src='https://images.unsplash.com/photo-1452270378797-c66dcc949a3f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=1e64f839ef2d4400d456e647bc1df5cc' alt='' width="200px" />
+          </a>
+        </div>
+    </div>
+</body>
+
+</html>

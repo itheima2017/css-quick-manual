@@ -45,6 +45,17 @@
   <div id="app"></div>
 </body>
 <script>
+  window.sidebar = [
+    { slug: '/', title: 'Home' },
+    {
+      slug: '/pageA',
+      title: 'page A',
+      children: [
+        { slug: '/pageA/childrenB', title: 'children B' }
+      ]
+    },
+    { slug: '/PageC', title: 'Page C' }
+  ]
   window.$docsify = {
     plugins: [
       function (hook) {
@@ -62,12 +73,13 @@
       }
     ],
     loadSidebar: true,
+    subMaxLevel: 3,
     maxLevel: 10,
     auto2top: true,
     coverpage: ['/', '/zh-cn/'],
     // homepage: 'getting-started.md',
     name: 'vue-element-admin-itheima',
-    repo: 'https://github.com/itheima2017/vue-element-admin-itheima',
+    repo: 'https://itheima2017/css-quick-manual.git',
     search: {
       noData: {
         '/zh-cn/': '没有结果!',
@@ -75,13 +87,11 @@
       },
       paths: 'auto',
       placeholder: {
-
         '/zh-cn/': '搜索',
         '/': 'Search'
       }
     }
   }
-
 </script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>

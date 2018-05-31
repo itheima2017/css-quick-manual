@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <style type="text/css">
+            .item {
+                width: 1000px;
+                height: 200px;
+                background-color: #2980b9;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .dount {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+                border: 5px solid #80bfe9;
+                border-left-color: #fff;
+                border-radius: 50%; 
+                animation: dount-anti 1.2s linear infinite;
+            }
+            @keyframes dount-anti {
+                0% {transform: rotate(0deg)}
+                100% {transform: rotate(360deg)}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="item load-one">
+            <div class="dount"></div>
+          </div>
+    </body>
+</html>

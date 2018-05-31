@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+       .item {
+        width: 1000px;
+        height: 200px;
+        background-color: #2980b9;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .progress {
+        width: 80%;
+        height: 7px;
+        margin-left: 10%;
+        border-radius: 8px;
+        background: linear-gradient(0,#e4e3e4,#e4e5e4);
+      }
+      .progress .loader-container {
+        width: 55%;
+        height: 100%;
+        border-radius: 8px;
+        background: linear-gradient(0, #f8dc4b,#d95a3d);
+        animation: progress_anti 1.5s ease-in-out infinite;
+      }
+      @keyframes progress_anti {
+        0% {width: 0%;}
+        100% {width: 99%}
+      }
+    </style>
+</head>
+
+<body>
+    <div class="item">
+        <div class="progress">
+            <div class="loader-container"></div>
+        </div>
+    </div>
+</body>
+
+</html>
