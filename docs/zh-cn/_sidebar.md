@@ -30,11 +30,9 @@
   - [省略号的使用](zh-cn/02_01省略号显示.md)
 - <b>CSS3 动画效果</b>
   - [loading动画](zh-cn/03_01loading动画.md)
-  - [鼠标滑过]()
+  - [鼠标滑过](zh-cn/03_02鼠标滑过.md)
     - [鼠标滑过图片](zh-cn/03_02-01鼠标滑过图片.md)
     - [鼠标滑过图片+文字](zh-cn/03_02-02鼠标滑过图片+文字.md)
   - [页面过渡](zh-cn/03_03页面过渡.md)
   - [背景动画](zh-cn/03_04背景动画.md)
   - [常用动画库](zh-cn/03_05常用动画库.md)
-    - [Animate.css动画库](zh-cn/Animate.css动画库.md)
-    - [Animate.css动画库](zh-cn/Animate.css动画库.md)
