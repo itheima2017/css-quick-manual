@@ -1,8 +1,12 @@
 # css 种植手册
 
-源码地址： [css-docsify](https://github.com/itheima2017/css-quick-manual)
+## 在线预览
 
-url:https://github.com/itheima2017/css-quick-manual
+[网址](http://csscode.itcast.cn/#/zh-cn/README)
+
+## 源码
+
+[git](https://github.com/itheima2017/css-quick-manual)
 
 ## 生产配置
 
