@@ -1,8 +1,12 @@
 # 黑马CSS代码助手
 
-## 研究员 常双
+## 在线预览
 
-运行:https://github.com/itheima2017/css-quick-manual
+[网址](http://csscode.itcast.cn/#/zh-cn/README)
+
+## 源码
+
+[git](https://github.com/itheima2017/css-quick-manual)
 
 ## 生产配置
 
