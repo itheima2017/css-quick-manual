@@ -1,6 +1,18 @@
-.section.cover.show {
-    background-color: #444 !important;
+section.cover.show {
+    background-image: url(../bg.jpg) !important;
+    opacity: 1;
+    /* background: #2a3d67 !important; */
+    color: #fff;
 }
+section.cover .cover-main {
+    font-size: 18px;
+}
+section.cover .cover-main img {
+    margin: 15px;
+    }
+    section.cover .cover-main>p:last-child a {
+        color: #fff
+    }
 /* left */
 body .sidebar {
     background: linear-gradient(-30deg,#2a3d67,#14264e);

@@ -1,52 +1,41 @@
 # <b> 头部和底部固定</b>
 
-[效果页面](../assets/source/01_21头部和底部固定.html ':include :type=iframe width=100% height=600px')
+[效果页面](../assets/source/01_21头部和底部固定.html ':include :type=iframe width=100% height=300px')
 
 [:point_right: 在codepen上编辑代码](https://codepen.io/shuangcs/pen/GxbZzv)
 
 ![标签](../assets/html.svg)
 ```html
-<header>头部</header>
-<article>
-  <p>呀，被滚到上面去了</p>
-  <p>呀，被滚到上面去了</p>
-  <p>呀，被滚到上面去了</p>
-  <p>呀，被滚到上面去了</p>
-</article>
-<footer>底部</footer>
+<div class="wrap flex flex-v">
+        <div class="header">我想要它固定顶部部</div>
+          <div class="main flex-1">
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+            <p>呀，自动适应高度，滚上去了</p>
+          </div>
+        <div class="footer">我想要它固定底部</div>
+      </div>
 ```
 ![标签](../assets/css.svg)
 
 ```css
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 40px;
-  margin: 0;
-}
+ html,body{height: 100%}
+.wrap{width: 100%;height: 100%;}
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
 
-header {
-  height: 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
-  background-color: beige;
-}
+.header,.footer{height:40px;line-height:40px;background-color: beige}
+.main{overflow:auto;-webkit-overflow-scrolling: touch;padding: 10px;line-height: 1.5;}
 
-article {
-  flex: auto;
-  height: auto;
-  background: mediumaquamarine;
-}
-
-footer {
-  height: 50px;
-  background-color: beige;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
 ```

@@ -1,8 +1,8 @@
-# css 种植手册
+# 黑马CSS代码助手
 
-源码地址： [css-docsify](https://github.com/itheima2017/css-quick-manual)
+## 研究员 常双
 
-url:https://github.com/itheima2017/css-quick-manual
+运行:https://github.com/itheima2017/css-quick-manual
 
 ## 生产配置
 
