@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>黑马CSS代码助手</title>
+  <title>CSS种植手册</title>
   <link rel="shortcut icon" href="./favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
@@ -36,14 +36,6 @@
 </style>
 
 <body>
-  <nav>
-    <!-- <a href="#/" data-translation="en">
-        <img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/uk.png" alt="uk"> EN
-      </a> -->
-    <!-- <a href="#/zh-cn" data-translation="zh-cn">
-        <img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/cn.png" alt="cn"> 中文
-      </a> -->
-  </nav>
   <div id="app"></div>
 </body>
 <script>
@@ -52,11 +44,13 @@
       function (hook, vm) {
       }
     ],
+    repo: 'https://github.com/itheima2017/css-quick-manual',
+    
     loadSidebar: true,
-    maxLevel: 10,
+    loadSidebar: './zh-cn/_sidebar.md',
+    homepage: './zh-cn/README.md',
     auto2top: true,
-    coverpage: ['/'],
-    name: '黑马CSS代码助手',
+    name: 'CSS3种植手册',
     search: {
       noData: {
         '/zh-cn/': '没有结果!',
@@ -79,16 +73,6 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109340118-1"></script>
 <script>
-  //  var d = document.getElementsByClassName("markdown-section");
-  // //  console.log(d)
-   //var n = document.createElement("span");
-  //  n.innerHTML= "444444"
-  //  console.log(n)
-   //document.getElementsByClassName("markdown-section").before(n)
-  //  element.appendChild('para');
-  // element.appendChild('<span>333333</span>')
-
-
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());

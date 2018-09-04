@@ -22,4 +22,5 @@
 
 @传智研究院-研发部
 
-江苏传智播客教育科技股份有限公司 &nbsp;版权所有Copyright 2006-2018, All Rights Reserved
+### 反馈
+如有任何意见或者建议，请到 [这里](https://github.com/itheima2017/css-quick-manual/issues) 进行反馈
