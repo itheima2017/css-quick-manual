@@ -1,23 +1,19 @@
-# 黑马CSS代码助手
-
-## 研究员 常双
+# 黑马 CSS 代码助手
 
 ## 在线预览
 
-[网址](http://csscode.itcast.cn/#/zh-cn/README)
+[网址](http://csscode.itcast.cn)
 
 ## 源码
 
 [git](https://github.com/itheima2017/css-quick-manual)
 
-## 生产配置
+## 运行
 
 ```bash
 npm i docsify-cli -g
-
-cd the project
-
 docsify serve docs
-```
 
-打开 http://localhost:3000
+Serving ./docs now.
+Listening at http://localhost:3000
+```
