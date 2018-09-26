@@ -1,6 +1,6 @@
 # CSS种植手册
 
-## [先睹为快](http://csscode.itcast.cn/#/zh-cn/README)
+## [先睹为快](http://csscode.itcast.cn)
 
 ## 项目运行
 
